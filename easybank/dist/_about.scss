@@ -1,0 +1,30 @@
+.about {
+  background-color: $Light_Grayish_Blue;
+  padding: 0rem 12rem;
+
+  &_details {
+    width: 62rem;
+    padding-bottom: 5rem;
+  }
+}
+.cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  // width: 30rem;
+
+  padding: 3rem 1rem;
+
+  & h3 {
+    font-size: 2.6rem;
+    margin: 3rem 0;
+    color: $Dark_Blue;
+  }
+  & p {
+    font-size: 1.8rem;
+    color: $Grayish_Blue;
+    line-height: 1.2;
+  }
+}

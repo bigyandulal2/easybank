@@ -1,0 +1,50 @@
+.footer {
+  padding: 5rem 12rem;
+  background-color: $Dark_Blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  &_item1 {
+    padding: 1.2rem;
+  }
+  &_about {
+    list-style: none;
+    @include flex($flexdir: column, $gap: 2rem);
+    font-size: 1.8rem;
+    @include list;
+
+    color: $White;
+  }
+  &_contacts {
+    list-style: none;
+    @include flex($flexdir: column, $gap: 2rem, $align: center);
+    font-size: 1.8rem;
+    color: $White;
+    @include list;
+  }
+  &_links {
+    margin-top: 5rem;
+    @include flex($gap: 1.5rem);
+    & svg :hover {
+      fill: $Lime_Green;
+      cursor: pointer;
+    }
+  }
+  &_item2 {
+    @include flex($gap: 17rem);
+    font-size: 1.8rem;
+    color: $White;
+  }
+  &_btnbox {
+    justify-self: end;
+    & p {
+      color: $Grayish_Blue;
+      font-size: 1.8rem;
+      text-transform: capitalize;
+    }
+  }
+  &_btn {
+    @include btn_primary;
+    margin: 1rem 0;
+    margin-left: 4rem;
+  }
+}

@@ -1,0 +1,58 @@
+// <section class="blog">
+// <h3 class="heading-primary-two">Latest Articles</h3>
+// <div class="blog_cards">
+//   <div class="blog_card">
+//     <img src="./images/image-currency.jpg" alt="currency" />
+//     <div class="blog_card_details">
+//       <span>By Claire Robinson</span>
+//       <h4>Receive money in any currency with no fees</h4>
+//       <p>
+//         The world is getting smaller and we’re becoming more mobile. So
+//         why should you be forced to only receive money in a single …
+//       </p>
+//     </div>
+//   </div>
+// </div>
+// </section>
+
+.blog {
+  padding: 8rem 12rem;
+  background-color: $Very_Light_Gray;
+  &_cards {
+    padding-top: 2rem;
+    display: flex;
+    gap: 3rem;
+  }
+  &_card {
+    // width: 28rem;
+    background-color: white;
+    & img {
+      width: 100%;
+      height: 50%;
+    }
+    &_details {
+      padding: 2rem;
+      text-align: start;
+      & span {
+        font-size: 1.2rem;
+        color: $Grayish_Blue;
+      }
+      & h4 {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+        color: $Dark_Blue;
+        &:hover {
+          color: $Lime_Green;
+          cursor: pointer;
+        }
+      }
+      & p {
+        font-size: 1.4rem;
+        color: $Grayish_Blue;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  // hero sections..............
+}

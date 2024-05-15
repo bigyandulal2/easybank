@@ -1,0 +1,13 @@
+.heading-primary {
+  @include heading_primary($font: 6rem);
+}
+.heading-primary-two {
+  @include heading_primary($font: 4rem);
+}
+.heading-secondary {
+  font-size: 2rem;
+  color: $Grayish_Blue;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+}

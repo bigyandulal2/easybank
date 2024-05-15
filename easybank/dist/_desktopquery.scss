@@ -1,0 +1,55 @@
+@media screen and (max-width: 71.875em) {
+  // hero---------------
+  .hero_list {
+    padding-bottom: 7rem;
+  }
+  // about -section
+  .about {
+    padding: 0 9rem;
+    max-width: 100%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  // blog card section
+  .blog {
+    padding: 6rem 9rem;
+    &_cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 70.625em) {
+  .blog {
+    padding: 6rem 8rem;
+  }
+  // about section starts
+  .about {
+    padding: 0 8rem;
+  }
+  .card h3 {
+    font-size: 2rem;
+  }
+  // about section ends
+
+  // footer starts
+  .footer {
+    padding: 4rem 2rem;
+    &_item2 {
+      gap: 4rem;
+    }
+  }
+  // footer ends
+
+  // hero section starts
+  .hero_details {
+    padding-left: 6rem;
+    padding-top: 16rem;
+    width: 50rem;
+  }
+  // hero section ends
+}

@@ -1,0 +1,42 @@
+@mixin img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+@mixin flex($justify: flex-start, $align: flex-start, $gap: 0, $flexdir: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+  flex-direction: $flexdir;
+}
+
+@mixin btn_primary {
+  background-image: linear-gradient(to right, $Lime_Green, $Bright_Cyan);
+  padding: 1.3rem 3rem;
+  border: none;
+  border-radius: 2rem;
+  color: $Very_Light_Gray;
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba($Lime_Green, 0.5),
+      rgba($Bright_Cyan, 0.6)
+    );
+    cursor: pointer;
+  }
+}
+
+@mixin heading_primary($font: 0rem) {
+  font-size: $font;
+  font-weight: 400;
+  color: $Dark_Blue;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+@mixin list {
+  & p:hover {
+    color: $Lime_Green;
+    cursor: pointer;
+  }
+}
